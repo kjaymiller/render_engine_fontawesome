@@ -1,12 +1,18 @@
 import pathlib
 
-from jinja2 import PackageLoader
+from jinja2 import DictLoader
 from render_engine.utils.themes import Theme
 # Add plugins here
 
+
 fontawesome = Theme(
-    loader=PackageLoader(f"render_engine_fontawesome", "templates"),
+    loader=DictLoader(
+        {
+            "fontawesome.html": '<script src="https://kit.fontawesome.com/{{theme["fontawesome"]}}.js" crossorigin="anonymous"></script>',
+        }
+    ),
     static_dir= pathlib.Path(__file__).parent / "static",
-    plugins = [],
-    filters = {},
+    filters=[],
+    plugins={},
+    globals = {"head": "fontawesome.html"},
 )

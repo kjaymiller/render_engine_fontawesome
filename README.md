@@ -1,6 +1,8 @@
-# fontawesome
+# Render Engine FontAwesome
 
-add the fontawesome iconset
+Adds the fontawesome iconset to render engine themes.
+
+Converts `<i class="fas fa-home"></i>` to <i class="fas fa-home"></i>.
 
 ## How to use this theme
 
