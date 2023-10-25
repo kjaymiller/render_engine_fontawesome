@@ -20,4 +20,11 @@ Converts `<i class="fas fa-home"></i>` to <i class="fas fa-home"></i>.
 
    app = Site()
    app.register_theme(fontawesome)
+   app.site_vars['theme'].update({fontawesome: 'your token here'})
    ```
+
+## Required Settings
+
+Fontawesome now requires a token to be used. You can get a free token from [fontawesome.com](https://fontawesome.com/start).
+
+The plugin looks for the `fontawesome` key in `site_vars['theme']` key. The value should be your token.
