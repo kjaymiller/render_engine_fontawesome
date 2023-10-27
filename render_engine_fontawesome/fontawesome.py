@@ -14,5 +14,5 @@ fontawesome = Theme(
     static_dir= pathlib.Path(__file__).parent / "static",
     filters=[],
     plugins={},
-    globals = {"head": "fontawesome.html"},
+    template_globals = {"head": "fontawesome.html"},
 )
