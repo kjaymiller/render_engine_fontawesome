@@ -1,10 +1,10 @@
 name: PyTest
 on:
   workflow_call:
-  # push:
-  #   branches:
-  #     - main
-  # pull_request:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test-with-pytest:
@@ -19,7 +19,6 @@ jobs:
       - name: Install requirements
         run: |
           python -m pip install -r requirements-test.txt
-          python -m playwright install --with-deps
 
       - name: Run tests
         run: python -m pytest
