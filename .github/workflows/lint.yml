@@ -1,4 +1,4 @@
-name: PyTest
+name: Lint against Ruff
 on:
   workflow_call:
   push:
