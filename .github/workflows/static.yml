@@ -38,8 +38,7 @@ jobs:
       - name: Run Render Engine
         run: |
           pip install -r requirements.txt
-          pip install "{{cookiecutter.project_name}}"
-          render-engine build docs.app:app
+          pip python -m render-engine build docs.app:app
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
