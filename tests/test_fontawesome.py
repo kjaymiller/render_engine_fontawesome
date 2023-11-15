@@ -21,5 +21,3 @@ def test_page_has_fontawesome_script(test_site):
 
     test_site._render_output("./", TestPage())
     assert "https://kit.fontawesome.com/1234567890.js" in test_site.output_path.joinpath("testpage.html").read_text()
-
-
