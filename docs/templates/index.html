@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+    {{super()}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+{% endblock %}
+{% block body %}
+    <div class="container">
+    {{content}}
+    </div>
+    {% block footer %}
+        {% include '_footer.html' %}
+    {% endblock %}
+{% endblock %}

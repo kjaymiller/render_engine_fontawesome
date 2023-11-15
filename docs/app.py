@@ -4,8 +4,11 @@ from render_engine.site import Site
 
 from render_engine_fontawesome.fontawesome import fontawesome
 
-app = Site()
-app.output_path = "docs/output"
+class app(Site):
+    template_path = "docs/templates"
+    output_path = "docs/output"
+
+app = app()
 app.site_vars.update(
     {
         "SITE_TITLE": "Render Engine FontAwesome",
@@ -32,7 +35,7 @@ app.register_themes(fontawesome)
 
 @app.page
 class Index(Page):
-    template = "content.html"
+    template = "index.html"
     title = ""
     slug = "index"
     Parser = MarkdownPageParser
