@@ -19,9 +19,6 @@ dev = [
     "ruff",
     ]
 
-docs = [
-    
-]
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
@@ -30,6 +27,7 @@ local_scheme = "no-local-version"
 homepage = "https://github.com/kjaymiller/render_engine_fontawesome"
 repository = "https://github.com/kjaymiller/render_engine_fontawesome"
 documentation = "https://github.io/kjaymiller/render_engine_fontawesome"
+                
 
 [tool.semantic_release]
 version_toml = "pyproject.toml:project.version"
@@ -37,10 +35,6 @@ branch = "main"
 
 [tool.ruff]
 select = ["E", "F", "I", "UP"]
-target-version = "py311"
+target-version = "py312"
 line-length = 120
 ignore-init-module-imports = true
-
-[tool.black]
-target-version =  ["py311"]
-line-length = 120

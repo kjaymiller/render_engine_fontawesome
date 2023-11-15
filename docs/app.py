@@ -4,9 +4,11 @@ from render_engine.site import Site
 
 from render_engine_fontawesome.fontawesome import fontawesome
 
+
 class app(Site):
     template_path = "docs/templates"
     output_path = "docs/output"
+
 
 app = app()
 app.site_vars.update(
