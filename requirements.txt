@@ -46,7 +46,7 @@ python-slugify==8.0.1
     # via render-engine
 pyyaml==6.0.1
     # via python-frontmatter
-render-engine==2023.11.1a3
+render-engine==2023.11.1a5
     # via render-engine-fontawesome (pyproject.toml)
 rich==13.7.0
     # via render-engine
