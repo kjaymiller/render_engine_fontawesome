@@ -3,11 +3,11 @@
     {{super()}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 {% endblock %}
-{% block body %}
-    <div class="container">
+{% block content %}
+<div class="container">
     {{content}}
     </div>
-    {% block footer %}
+ {% endblock %}   
+{% block footer %}
         {% include '_footer.html' %}
-    {% endblock %}
 {% endblock %}
