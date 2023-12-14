@@ -48,7 +48,7 @@ render-engine==2023.12.1b3
     # via render-engine-fontawesome (pyproject.toml)
 rich==13.7.0
     # via render-engine
-ruff==0.1.7
+ruff==0.1.8
     # via render-engine-fontawesome (pyproject.toml)
 six==1.16.0
     # via python-dateutil
