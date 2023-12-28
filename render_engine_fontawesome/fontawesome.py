@@ -5,6 +5,7 @@ from render_engine.themes import Theme
 
 # Add plugins here
 fontawesome = Theme(
+    prefix="fontawesome",
     loader=DictLoader(
         {
             "fontawesome.html": '<script src="https://kit.fontawesome.com/{{theme["fontawesome"]}}.js" crossorigin="anonymous"></script>',  # noqa 501
