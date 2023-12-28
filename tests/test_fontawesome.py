@@ -16,8 +16,9 @@ def test_site(tmp_path_factory):
 
 
 def test_page_has_fontawesome_script(test_site):
+    @test_site.page
     class TestPage(Page):
         template = "base.html"
 
-    test_site._render_output("./", TestPage())
+    test_site.render()
     assert "https://kit.fontawesome.com/1234567890.js" in test_site.output_path.joinpath("testpage.html").read_text()
